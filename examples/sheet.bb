@@ -5,14 +5,11 @@
 (require '[babashka.deps :as deps])
 
 (deps/add-deps
- '{:deps {io.github.timokramer/charm.clj {:git/tag "v0.2.69"
-                                          :git/sha "119c5efe2eb488bd75c6fe7511971843d6f8de71"}
-          eve/eve                         {:git/url "https://github.com/SeniorCareMarket/eve"
-                                           :git/sha "fdf021daa0e3463743308d811b7712096a7c6381"}}})
+ '{:deps {kpassapk/eve-tui {:git/url "https://github.com/kpassapk/eve-tui"
+                   :git/sha "c4b61b71ecce12318c09d823588eaa1751cc8a49"}}})
 
 ;; Load framework from local path (replace with git dep once published)
 (require '[babashka.classpath :as cp])
-(cp/add-classpath "/Users/kyle/src/tmp/eve-tui/src")
 
 (require '[charm.message :as msg]
          '[charm.style.core :as style]
