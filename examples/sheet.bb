@@ -6,7 +6,7 @@
 
 (deps/add-deps
  '{:deps {kpassapk/eve-tui {:git/url "https://github.com/kpassapk/eve-tui"
-                   :git/sha "c4b61b71ecce12318c09d823588eaa1751cc8a49"}}})
+                   :git/sha "89bf9b0013f3dff8999f8c8a5ba476d1b892f5c5"}}})
 
 ;; Load framework from local path (replace with git dep once published)
 (require '[babashka.classpath :as cp])
